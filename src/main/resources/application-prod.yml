@@ -1,0 +1,8 @@
+build:
+  version: V2
+
+accounts:
+  message: welcome to Cards services PROD
+  contactInfo:
+    name: Ben
+    mail: ben.1@gmail.com
