@@ -14,12 +14,17 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  application:
+    name: "cards"
+  profiles:
+    active: "prod"
+  config:
+    import: "optional:configserver:http://localhost:8071/"
 
-uild:
-  version: V2
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
-accounts:
-  message: welcome to Cards services
-  contactInfo:
-    name: Maria
-    mail: maria.1@gmail.com
+
